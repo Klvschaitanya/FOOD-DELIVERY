@@ -4,7 +4,7 @@ const User = require("../models/User")
 const { body, validationResult } = require('express-validator')
 const jwt = require('jsonwebtoken');
 const bcrypt = require("bcryptjs")
-const jwtSecret = "abcdefghi123456789"
+const jwtSecret = process.env.jwtSecret
 
 router.post("/signup", [
     body('password', "min password length is 5").isLength({ min: 5 }),
