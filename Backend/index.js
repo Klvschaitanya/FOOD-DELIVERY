@@ -6,7 +6,7 @@ const createUser = require('./routes/CreateUser')
 const Displaydata =require('./routes/DisplayData')
 const OrderData = require('./routes/OrderData')
 mongoDB();
-
+ 
 const cors = require('cors');
 
 // Enable CORS for your specific origin
