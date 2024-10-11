@@ -1,6 +1,6 @@
 const express = require("express");
  const app = express();
- const Port = 5000;
+ const Port = process.env.PORT || 5000;
 const mongoDB = require("./db")
 const createUser = require('./routes/CreateUser')
 const Displaydata =require('./routes/DisplayData')
